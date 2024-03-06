@@ -50,7 +50,7 @@ function BaixarCanvas() {
     const dataURL = canvas.toDataURL("image/png");
     const link = document.createElement('a');
     link.href = dataURL;
-    link.download = 'customizacao.png';
+    link.download = 'Newcete.png';
     link.click();
 }
 
