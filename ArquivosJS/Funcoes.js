@@ -240,21 +240,21 @@ function selecionarCabeloTras(cabeloTrasSelecionado) {
             </div>
             <div class="MargemBotoes">
                 <button onclick="ProximoCabeloTras('Imagens/Cabelos-Tras/back-wig-061.png')">Castanho</button>
-                <button onclick="ProximoCabeloTras('Imagens/Cabelos-Tras/back-wig-062.png')">Branco</button>
-                <button onclick="ProximoCabeloTras('Imagens/Cabelos-Tras/back-wig-063.png')">Preto</button>
+                <button onclick="ProximoCabeloTras('Imagens/Cabelos-Tras/back-wig-070.png')">Branco</button>
+                <button onclick="ProximoCabeloTras('Imagens/Cabelos-Tras/back-wig-069.png')">Preto</button>
             </div>
             <div class="MargemBotoes">
-                <button onclick="ProximoCabeloTras('Imagens/Cabelos-Tras/back-wig-064.png')">Azul Claro</button>
-                <button onclick="ProximoCabeloTras('Imagens/Cabelos-Tras/back-wig-065.png')">Azul Escuro</button>
-                <button onclick="ProximoCabeloTras('Imagens/Cabelos-Tras/back-wig-066.png')">Roxo</button>
+                <button onclick="ProximoCabeloTras('Imagens/Cabelos-Tras/back-wig-068.png')">Azul Claro</button>
+                <button onclick="ProximoCabeloTras('Imagens/Cabelos-Tras/back-wig-067.png')">Azul Escuro</button>
+                <button onclick="ProximoCabeloTras('Imagens/Cabelos-Tras/back-wig-063.png')">Roxo</button>
             </div>
             <div class="MargemBotoes">
-                <button onclick="ProximoCabeloTras('Imagens/Cabelos-Tras/back-wig-067.png')">Vermelho</button>
-                <button onclick="ProximoCabeloTras('Imagens/Cabelos-Tras/back-wig-068.png')">Loiro</button>
-                <button onclick="ProximoCabeloTras('Imagens/Cabelos-Tras/back-wig-069.png')">Ruivo</button>
+                <button onclick="ProximoCabeloTras('Imagens/Cabelos-Tras/back-wig-065.png')">Vermelho</button>
+                <button onclick="ProximoCabeloTras('Imagens/Cabelos-Tras/back-wig-066.png')">Loiro</button>
+                <button onclick="ProximoCabeloTras('Imagens/Cabelos-Tras/back-wig-064.png')">Ruivo</button>
             </div>
             <div class="MargemBotoes">
-                <button onclick="ProximoCabeloTras('Imagens/Cabelos-Tras/back-wig-070.png')">Rosa</button>
+                <button onclick="ProximoCabeloTras('Imagens/Cabelos-Tras/back-wig-062.png')">Rosa</button>
             </div>
         `;
     } else if (cabeloTrasSelecionado === 8) {
@@ -580,21 +580,21 @@ function selecionarCabeloFrente(CabeloFrenteSelecionado) {
             </div>
             <div class="MargemBotoes">
                 <button onclick="ProximoCabeloFrente('Imagens/Cabelos-Frente/front-wig-061.png')">Castanho</button>
-                <button onclick="ProximoCabeloFrente('Imagens/Cabelos-Frente/front-wig-062.png')">Branco</button>
-                <button onclick="ProximoCabeloFrente('Imagens/Cabelos-Frente/front-wig-063.png')">Preto</button>
+                <button onclick="ProximoCabeloFrente('Imagens/Cabelos-Frente/front-wig-070.png')">Branco</button>
+                <button onclick="ProximoCabeloFrente('Imagens/Cabelos-Frente/front-wig-069.png')">Preto</button>
             </div>
             <div class="MargemBotoes">
-                <button onclick="ProximoCabeloFrente('Imagens/Cabelos-Frente/front-wig-064.png')">Azul Claro</button>
-                <button onclick="ProximoCabeloFrente('Imagens/Cabelos-Frente/front-wig-065.png')">Azul Escuro</button>
-                <button onclick="ProximoCabeloFrente('Imagens/Cabelos-Frente/front-wig-066.png')">Roxo</button>
+                <button onclick="ProximoCabeloFrente('Imagens/Cabelos-Frente/front-wig-068.png')">Azul Claro</button>
+                <button onclick="ProximoCabeloFrente('Imagens/Cabelos-Frente/front-wig-067.png')">Azul Escuro</button>
+                <button onclick="ProximoCabeloFrente('Imagens/Cabelos-Frente/front-wig-063.png')">Roxo</button>
             </div>
             <div class="MargemBotoes">
-                <button onclick="ProximoCabeloFrente('Imagens/Cabelos-Frente/front-wig-067.png')">Vermelho</button>
-                <button onclick="ProximoCabeloFrente('Imagens/Cabelos-Frente/front-wig-068.png')">Loiro</button>
-                <button onclick="ProximoCabeloFrente('Imagens/Cabelos-Frente/front-wig-069.png')">Ruivo</button>
+                <button onclick="ProximoCabeloFrente('Imagens/Cabelos-Frente/front-wig-065.png')">Vermelho</button>
+                <button onclick="ProximoCabeloFrente('Imagens/Cabelos-Frente/front-wig-066.png')">Loiro</button>
+                <button onclick="ProximoCabeloFrente('Imagens/Cabelos-Frente/front-wig-064.png')">Ruivo</button>
             </div>
             <div class="MargemBotoes">
-                <button onclick="ProximoCabeloFrente('Imagens/Cabelos-Frente/front-wig-070.png')">Rosa</button>
+                <button onclick="ProximoCabeloFrente('Imagens/Cabelos-Frente/front-wig-062.png')">Rosa</button>
             </div>
         `;
     } else if (CabeloFrenteSelecionado === 8) {
