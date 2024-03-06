@@ -1,2 +1,3 @@
-# ADNG--Sweet-Creation
-Criando um Custom Sucrette pro New Gen
+# Amor Doce New Gen - Sweet Creation
+
+Criando um customizador de newcete pro New Gen
