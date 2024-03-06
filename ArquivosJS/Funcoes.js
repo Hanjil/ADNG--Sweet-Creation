@@ -73,7 +73,7 @@ function toggleOpcoesAcc() {
 }
 
 
-
+/*Corrigir cabelo 7 - cores fora de ordem*/
 function selecionarCabeloTras(cabeloTrasSelecionado) {
     var opcoesCabeloTras = document.getElementById("Opcoes-Cabelo-Tras");
     opcoesCabeloTras.style.display = "none";
@@ -718,28 +718,31 @@ function voltarOpcoesCabeloFrente() {
 }
 
 function downloadBoneca() {
-    // Obter referências para as imagens
     var cabeloTras = document.getElementById("CabeloTras");
     var pele = document.getElementById("Pele");
     var roupa = document.getElementById("Roupa");
     var cabeloFrente = document.getElementById("CabeloFrente");
     var acc = document.getElementById("Acc");
 
-    // Criar um canvas para combinar as imagens
     var canvas = document.createElement("canvas");
     canvas.width = cabeloTras.width;
     canvas.height = cabeloTras.height;
-    var context = canvas.getContext("2d");
+    var ctx = canvas.getContext("2d");
 
-    // Desenhar as imagens no canvas
-    context.drawImage(cabeloTras, 0, 0);
-    context.drawImage(pele, 0, 0);
-    context.drawImage(roupa, 0, 0);
-    context.drawImage(cabeloFrente, 0, 0);
-    context.drawImage(acc, 0, 0);
+    ctx.drawImage(cabeloTras, 0, 0);
+    ctx.drawImage(pele, 0, 0);
+    ctx.drawImage(roupa, 0, 0);
+    ctx.drawImage(cabeloFrente, 0, 0);
+    ctx.drawImage(acc, 0, 0);
 
-    // Criar um link de download
-    var link = document.createElement("a");
-    link.download = "Newcete.png";
-    link.href = canvas.toDataURL("image/png");
+    var link = document.createElement('a');
+    link.href = canvas.toDataURL();
+    link.download = 'boneca.png';
+    
+    link.style.display = 'none'; // Oculta o link
+    
+    document.body.appendChild(link);
+    link.click();
+    
+    document.body.removeChild(link); // Remove o link após o clique
 }

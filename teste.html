@@ -1,14 +1,53 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="ArquivosCSS/Geral.css">
-    <title>Document</title>
+    <title>Boneca Download</title>
 </head>
 <body>
-    <div id="nome-cabecalho">
-        <p>Texto</p>
-    </div>
+
+<div id="Categorias">
+    <img id="CabeloTras" src="Imagens/Cabelos-Tras/back-wig-001.png">
+    <img id="Pele" src="Imagens/Peles/skin-05.png">
+    <img id="Roupa" src="Imagens/Roupas/outfit-01.png">
+    <img id="CabeloFrente" src="Imagens/Cabelos-Frente/front-wig-001.png">
+    <img id="Acc" src="Imagens/Acessorios/hat-01.png">
+</div>
+
+<button onclick="downloadBoneca()">Baixar Boneca</button>
+
+<script>
+function downloadBoneca() {
+    // Obter referências para as imagens
+    var cabeloTras = document.getElementById("CabeloTras");
+    var pele = document.getElementById("Pele");
+    var roupa = document.getElementById("Roupa");
+    var cabeloFrente = document.getElementById("CabeloFrente");
+    var acc = document.getElementById("Acc");
+
+    // Criar um canvas para combinar as imagens
+    var canvas = document.createElement("canvas");
+    canvas.width = cabeloTras.width;
+    canvas.height = cabeloTras.height;
+    var context = canvas.getContext("2d");
+
+    // Desenhar as imagens no canvas
+    context.drawImage(cabeloTras, 0, 0);
+    context.drawImage(pele, 0, 0);
+    context.drawImage(roupa, 0, 0);
+    context.drawImage(cabeloFrente, 0, 0);
+    context.drawImage(acc, 0, 0);
+
+    // Criar um link de download
+    var link = document.createElement("a");
+    link.download = "boneca.png";
+    link.href = canvas.toDataURL("image/png");
+
+    // Simular um clique no link para iniciar o download
+    link.click();
+}
+</script>
+
 </body>
 </html>
