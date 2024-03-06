@@ -1,22 +1,31 @@
 function ProximoCabeloTras(fileName) {
-    let img = document.querySelector("#CabeloTras")
-    img.setAttribute('src', fileName)
+    CabeloTrasSelecionado = fileName;
+    document.getElementById('CabeloTras').src = fileName;
+    desenharCanvas();
 }
+
 function ProximaPele(fileName) {
-    let img = document.querySelector("#Pele")
-    img.setAttribute('src', fileName)
+    PeleSelecionado = fileName;
+    document.getElementById('Pele').src = fileName;
+    desenharCanvas();
 }
+
 function ProximaRoupa(fileName) {
-    let img = document.querySelector("#Roupa")
-    img.setAttribute('src', fileName)
+    RoupaSelecionada = fileName;
+    document.getElementById('Roupa').src = fileName;
+    desenharCanvas();
 }
+
 function ProximoCabeloFrente(fileName) {
-    let img = document.querySelector("#CabeloFrente")
-    img.setAttribute('src', fileName)
+    CabeloFrenteSelecionado = fileName;
+    document.getElementById('CabeloFrente').src = fileName;
+    desenharCanvas();
 }
+
 function ProximoAcc(fileName) {
-    let img = document.querySelector("#Acc")
-    img.setAttribute('src', fileName)
+    AccSelecionado = fileName;
+    document.getElementById('Acc').src = fileName;
+    desenharCanvas();
 }
 
 
@@ -717,32 +726,3 @@ function voltarOpcoesCabeloFrente() {
     novosBotoesCabeloFrente.style.display = "none";
 }
 
-function downloadBoneca() {
-    var cabeloTras = document.getElementById("CabeloTras");
-    var pele = document.getElementById("Pele");
-    var roupa = document.getElementById("Roupa");
-    var cabeloFrente = document.getElementById("CabeloFrente");
-    var acc = document.getElementById("Acc");
-
-    var canvas = document.createElement("canvas");
-    canvas.width = cabeloTras.width;
-    canvas.height = cabeloTras.height;
-    var ctx = canvas.getContext("2d");
-
-    ctx.drawImage(cabeloTras, 0, 0);
-    ctx.drawImage(pele, 0, 0);
-    ctx.drawImage(roupa, 0, 0);
-    ctx.drawImage(cabeloFrente, 0, 0);
-    ctx.drawImage(acc, 0, 0);
-
-    var link = document.createElement('a');
-    link.href = canvas.toDataURL();
-    link.download = 'boneca.png';
-    
-    link.style.display = 'none'; // Oculta o link
-    
-    document.body.appendChild(link);
-    link.click();
-    
-    document.body.removeChild(link); // Remove o link após o clique
-}

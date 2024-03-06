@@ -12,6 +12,7 @@
 
 <body>
     <div id="Categorias">
+        <img id="BlankImage" src="Imagens/Peles/skin-05.png" style="display: none;">
         <img id="CabeloTras" src="Imagens/blank.png">
         <img id="Pele" src="Imagens/Peles/skin-05.png">
         <img id="Roupa" src="Imagens/blank.png">
@@ -134,7 +135,7 @@
                     <button onclick="selecionarCabeloFrente(11)">Cabelo 11</button>
                     <button onclick="selecionarCabeloFrente(12)">Cabelo 12</button>
                 </div>                    
-                <div>
+                <div class="MargemBotoes">
                     <button onclick="ProximoCabeloFrente('Imagens/blank.png')">Limpar</button>
                 </div>
             </div>
@@ -176,10 +177,13 @@
         </div>
 
         <div class="MargemDiv">
-            <button onclick="downloadBoneca()">Download Boneca</button>
+            <button onclick="BaixarCanvas()">Baixar Canvas</button>
         </div>
     </div>
+    
+    <canvas id="canvas" style="display: none;"></canvas>
 
     <script src="ArquivosJS/Funcoes.js"></script>
+    <script src="ArquivosJS/Teste.js"></script>
 </body>
 </html>
