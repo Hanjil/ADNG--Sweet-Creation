@@ -1,0 +1,21 @@
+#botoes {
+    width: 450px;
+    border-radius: 20px;
+    background-color: rgba(210, 176, 243, 0.5);
+}
+
+button {
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    transition: transform 200ms ease;
+    transition: font-weight 200ms ease-in-out;
+    background-color: rgb(254, 233, 203);
+    align-items: center;
+}
+
+button:hover {
+    transform: scale(1.1);
+    font-weight: bold;
+    background-color: rgb(255, 223, 179);
+}

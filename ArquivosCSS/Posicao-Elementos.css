@@ -1,0 +1,40 @@
+#Categorias {
+    position: absolute;
+    top: -30%;
+    left: 18%;
+}
+
+#CabeloTras {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+#Pele {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+#Roupa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+#CabeloFrente {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 4;
+}
+#Acc {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+#botoes {
+    position: absolute;
+    z-index: 6;
+}
