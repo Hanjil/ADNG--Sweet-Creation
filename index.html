@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ArquivosCSS/Posicao-Elementos.css">
+    <link rel="stylesheet" href="ArquivosCSS/Geral.css">
+    <link rel="stylesheet" href="ArquivosCSS/Opcoes-Botoes.css">
+    <link rel="stylesheet" href="ArquivosCSS/Aparencia-Botoes.css">
+    <title>Sweet Creation</title>
+</head>
+
+<body>
+    <div id="Categorias">
+        <img id="CabeloTras" src="">
+        <img id="Pele" src="Imagens/Peles/skin-05.png">
+        <img id="Roupa" src="">
+        <img id="CabeloFrente" src="">
+        <img id="Acc" src="">
+    </div>
+
+    <div id = "botoes">
+        <div class="MargemDiv"> <!--Botões Cabelo Traz-->
+            <button onclick="toggleOpcoesCabeloTras()">Cabelos Tras</button>
+            <div id="Opcoes-Cabelo-Tras" class="MargemDivInterna">
+                <div class="MargemBotoes">
+                    <button onclick="selecionarCabeloTras(1)">Cabelo 1</button>
+                    <button onclick="selecionarCabeloTras(2)">Cabelo 2</button>
+                    <button onclick="selecionarCabeloTras(3)">Cabelo 3</button>
+                </div>
+                <div class="MargemBotoes">
+                    <button onclick="selecionarCabeloTras(4)">Cabelo 4</button>
+                    <button onclick="selecionarCabeloTras(5)">Cabelo 5</button>
+                    <button onclick="selecionarCabeloTras(6)">Cabelo 6</button>
+                </div>
+                <div class="MargemBotoes">
+                    <button onclick="selecionarCabeloTras(7)">Cabelo 7</button>
+                    <button onclick="selecionarCabeloTras(8)">Cabelo 8</button>
+                    <button onclick="selecionarCabeloTras(9)">Cabelo 9</button>
+                </div>
+                <div class="MargemBotoes">
+                    <button onclick="selecionarCabeloTras(10)">Cabelo 10</button>
+                    <button onclick="ProximoCabeloTras('Imagens/blank.png')">Limpar</button>
+                </div>
+            </div>
+            <div id="Novos-Botoes-Cabelo-Tras" class="MargemDivInterna" style="display: none;"></div>
+        </div>
+
+        <div class="MargemDiv"> <!--Botões Pele-->
+            <button onclick="toggleOpcoesPele()">Peles</button>
+            <div id="Opcoes-Pele" class="MargemDivInterna">
+                <div class="MargemBotoes">
+                    <button onclick="selecionarPele(1)">Tom 1 (albina)</button>
+                    <button onclick="selecionarPele(2)">Tom 2</button>
+                    <button onclick="selecionarPele(3)">Tom 3</button>
+                </div>  
+                <div class="MargemBotoes">
+                    <button onclick="selecionarPele(4)">Tom 4</button>
+                    <button onclick="selecionarPele(5)">Tom 5</button>
+                    <button onclick="selecionarPele(6)">Tom 6 (vitiligo)</button>
+                </div>
+                <div class="MargemBotoes">
+                    <button onclick="selecionarPele(7)">Tom 7</button>
+                </div>
+            </div>
+            <div id="Novos-Botoes-Pele" class="MargemDivInterna" style="display: none;"></div>
+        </div>
+        
+        <div class="MargemDiv"> <!--Botões Roupa-->
+            <button onclick="toggleOpcoesRoupa()">Roupas</button>
+            <div id="Opcoes-Roupa" class="MargemDivInterna">
+                <div class="MargemBotoes">
+                    <button onclick="ProximaRoupa('Imagens/Roupas/outfit-01.png')">Roupa 1</button>
+                    <button onclick="ProximaRoupa('Imagens/Roupas/outfit-02.png')">Roupa 2</button>
+                    <button onclick="ProximaRoupa('Imagens/Roupas/outfit-03.png')">Roupa 3</button>
+                </div>
+                <div class="MargemBotoes">
+                    <button onclick="ProximaRoupa('Imagens/Roupas/outfit-04.png')">Roupa 4</button>
+                    <button onclick="ProximaRoupa('Imagens/Roupas/outfit-05.png')">Roupa 5</button>
+                    <button onclick="ProximaRoupa('Imagens/Roupas/outfit-06.png')">Roupa 6</button>
+                </div>
+                <div class="MargemBotoes">
+                    <button onclick="ProximaRoupa('Imagens/Roupas/outfit-07.png')">Roupa 7</button>
+                    <button onclick="ProximaRoupa('Imagens/Roupas/outfit-08.png')">Roupa 8</button>
+                    <button onclick="ProximaRoupa('Imagens/Roupas/outfit-09.png')">Roupa 9</button>
+                </div>
+                <div class="MargemBotoes">
+                    <button onclick="ProximaRoupa('Imagens/Roupas/outfit-10.png')">Roupa 10</button>
+                    <button onclick="ProximaRoupa('Imagens/Roupas/outfit-11.png')">Roupa 11</button>
+                    <button onclick="ProximaRoupa('Imagens/Roupas/outfit-12.png')">Roupa 12</button>
+                </div>
+                <div class="MargemBotoes">
+                    <button onclick="ProximaRoupa('Imagens/Roupas/outfit-13.png')">Roupa 13</button>
+                    <button onclick="ProximaRoupa('Imagens/Roupas/outfit-14.png')">Roupa 14</button>
+                    <button onclick="ProximaRoupa('Imagens/Roupas/outfit-15.png')">Roupa 15</button>
+                </div>
+                <div class="MargemBotoes">
+                    <button onclick="ProximaRoupa('Imagens/Roupas/outfit-16.png')">Roupa 16</button>
+                    <button onclick="ProximaRoupa('Imagens/Roupas/outfit-17.png')">Roupa 17</button>
+                    <button onclick="ProximaRoupa('Imagens/Roupas/outfit-18.png')">Roupa 18</button>
+                </div>
+                <div class="MargemBotoes">
+                    <button onclick="ProximaRoupa('Imagens/Roupas/outfit-19.png')">Roupa 19</button>
+                    <button onclick="ProximaRoupa('Imagens/Roupas/outfit-20.png')">Roupa 20</button>
+                    <button onclick="ProximaRoupa('Imagens/blank.png')">Limpar</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="MargemDiv"> <!--Botões Cabelo Frente-->
+            <button onclick="toggleOpcoesCabeloFrente()">Cabelos Frente</button>
+            <div id="Opcoes-Cabelo-Frente" class="MargemDivInterna">
+                <div class="MargemBotoes">
+                    <button onclick="selecionarCabeloFrente(1)">Cabelo 1</button>
+                    <button onclick="selecionarCabeloFrente(2)">Cabelo 2</button>
+                    <button onclick="selecionarCabeloFrente(3)">Cabelo 3</button>
+                </div>
+                <div class="MargemBotoes">
+                    <button onclick="selecionarCabeloFrente(4)">Cabelo 4</button>
+                    <button onclick="selecionarCabeloFrente(5)">Cabelo 5</button>
+                    <button onclick="selecionarCabeloFrente(6)">Cabelo 6</button>
+                </div>
+                <div class="MargemBotoes">
+                    <button onclick="selecionarCabeloFrente(7)">Cabelo 7</button>
+                    <button onclick="selecionarCabeloFrente(8)">Cabelo 8</button>
+                    <button onclick="selecionarCabeloFrente(9)">Cabelo 9</button>
+                </div>
+                <div class="MargemBotoes">
+                    <button onclick="selecionarCabeloFrente(10)">Cabelo 10</button>
+                    <button onclick="ProximoCabeloFrente('Imagens/blank.png')">Limpar</button>
+                </div>
+            </div>
+            <div id="Novos-Botoes-Cabelo-Frente" class="MargemDivInterna" style="display: none;"></div>
+        </div>
+
+        <div class="MargemDiv"> <!--Botões Acc-->
+            <button onclick="toggleOpcoesAcc()">Accs</button>
+            <div id="Opcoes-Acc" class="MargemDivInterna">
+                <div class="MargemBotoes">
+                    <button onclick="ProximoAcc('Imagens/Acessorios/hat-01.png')">Acc 1</button>
+                    <button onclick="ProximoAcc('Imagens/Acessorios/hat-02.png')">Acc 2</button>
+                    <button onclick="ProximoAcc('Imagens/Acessorios/hat-03.png')">Acc 3</button>
+                </div>
+                <div class="MargemBotoes">
+                    <button onclick="ProximoAcc('Imagens/Acessorios/hat-04.png')">Acc 4</button>
+                    <button onclick="ProximoAcc('Imagens/Acessorios/hat-05.png')">Acc 5</button>
+                    <button onclick="ProximoAcc('Imagens/Acessorios/hat-06.png')">Acc 6</button>
+                </div>
+                <div class="MargemBotoes">
+                    <button onclick="ProximoAcc('Imagens/Acessorios/hat-07.png')">Acc 7</button>
+                    <button onclick="ProximoAcc('Imagens/Acessorios/hat-08.png')">Acc 8 (Aparelho Auditivo)</button>
+                    <button onclick="ProximoAcc('Imagens/Acessorios/hat-09.png')">Acc 9</button>
+                </div>
+                <div class="MargemBotoes">
+                    <button onclick="ProximoAcc('Imagens/Acessorios/hat-10.png')">Acc 10</button>
+                    <button onclick="ProximoAcc('Imagens/Acessorios/hat-11.png')">Acc 11</button>
+                    <button onclick="ProximoAcc('Imagens/Acessorios/hat-12.png')">Acc 12</button>
+                </div>
+                <div class="MargemBotoes">
+                    <button onclick="ProximoAcc('Imagens/Acessorios/hat-13.png')">Acc 13</button>
+                    <button onclick="ProximoAcc('Imagens/Acessorios/hat-14.png')">Acc 14</button>
+                    <button onclick="ProximoAcc('Imagens/Acessorios/hat-15.png')">Acc 15</button>
+                </div>
+                <div class="MargemBotoes">
+                    <button onclick="ProximoAcc('Imagens/blank.png')">Limpar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="ArquivosJS/Funcoes.js"></script>
+</body>
+</html>
