@@ -26,7 +26,7 @@ body {
     border-radius: 10px;
 }
 
-#Categorias {
-    max-width: 50%;
+#Categorias img {
+    max-width: 80%;
     height: auto;
 }
