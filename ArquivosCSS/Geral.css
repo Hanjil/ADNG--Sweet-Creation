@@ -16,6 +16,11 @@ body {
     background-color: burlywood;
 }
 
+#Categorias img {
+    width: 80%;
+    height: auto;
+}
+
 #nome-cabecalho {
     color: rgb(222, 135, 199);
     font-size: larger;
