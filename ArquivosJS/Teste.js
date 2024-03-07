@@ -4,6 +4,11 @@ let RoupaSelecionada = '';
 let CabeloFrenteSelecionado = '';
 let AccSelecionado = '';
 
+const canvas = document.getElementById('canvas');
+canvas.width = 1200;
+canvas.height = 1550;
+desenharCanvas();
+
 function desenharCanvas() {
     const canvas = document.getElementById('canvas');
     const ctx = canvas.getContext('2d');
@@ -44,5 +49,3 @@ function BaixarCanvas() {
     link.download = 'Newcete.png';
     link.click();
 }
-
-// Restante do código permanece o mesmo

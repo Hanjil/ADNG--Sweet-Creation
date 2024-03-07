@@ -82,7 +82,6 @@ function toggleOpcoesAcc() {
 }
 
 
-/*Corrigir cabelo 7 - cores fora de ordem*/
 function selecionarCabeloTras(cabeloTrasSelecionado) {
     var opcoesCabeloTras = document.getElementById("Opcoes-Cabelo-Tras");
     opcoesCabeloTras.style.display = "none";
