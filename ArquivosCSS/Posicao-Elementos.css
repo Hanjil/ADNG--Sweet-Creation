@@ -8,40 +8,30 @@
     position: absolute;
     top: 0;
     left: 0;
-    max-width: 80%;
-    height: auto;
     z-index: 1;
 }
 #Pele {
     position: absolute;
     top: 0;
     left: 0;
-    max-width: 80%;
-    height: auto;
     z-index: 2;
 }
 #Roupa {
     position: absolute;
     top: 0;
     left: 0;
-    max-width: 80%;
-    height: auto;
     z-index: 3;
 }
 #CabeloFrente {
     position: absolute;
     top: 0;
     left: 0;
-    max-width: 80%;
-    height: auto;
     z-index: 4;
 }
 #Acc {
     position: absolute;
     top: 0;
     left: 0;
-    max-width: 80%;
-    height: auto;
     z-index: 5;
 }
 #botoes {
