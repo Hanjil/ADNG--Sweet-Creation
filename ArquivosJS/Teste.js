@@ -4,15 +4,6 @@ let RoupaSelecionada = '';
 let CabeloFrenteSelecionado = '';
 let AccSelecionado = '';
 
-const blankImage = document.getElementById('BlankImage');
-blankImage.onload = function () {
-    const canvas = document.getElementById('canvas');
-    canvas.width = blankImage.width;
-    canvas.height = blankImage.height;
-    desenharCanvas();
-};
-blankImage.src = 'Imagens/Peles/skin-05.png';
-
 function desenharCanvas() {
     const canvas = document.getElementById('canvas');
     const ctx = canvas.getContext('2d');
