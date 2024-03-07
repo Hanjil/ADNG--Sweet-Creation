@@ -16,6 +16,13 @@ body {
     background-color: burlywood;
 }
 
+.imagem-redimensionada {
+    max-width: 90%;
+    max-height: 90%;
+    width: auto;
+    height: auto;
+}
+
 #nome-cabecalho {
     color: rgb(222, 135, 199);
     font-size: larger;
