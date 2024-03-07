@@ -16,13 +16,6 @@ body {
     background-color: burlywood;
 }
 
-.imagem-redimensionada {
-    max-width: 100%;
-    height: auto;
-    display: block; /* Adicione esta linha para resolver problemas de exibição em alguns navegadores */
-    margin: auto; /* Centraliza a imagem horizontalmente */
-}
-
 #nome-cabecalho {
     color: rgb(222, 135, 199);
     font-size: larger;
