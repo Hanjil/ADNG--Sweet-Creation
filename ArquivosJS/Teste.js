@@ -10,25 +10,32 @@ canvas.height = 1550;
 desenharCanvas();
 
 function desenharCanvas() {
-    const canvas = document.getElementById('canvas');
     const ctx = canvas.getContext('2d');
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
     const imgCabeloTras = new Image();
     imgCabeloTras.src = CabeloTrasSelecionado;
-    ctx.drawImage(imgCabeloTras, 0, 0, canvas.width, canvas.height);
+    imgCabeloTras.onload = function() {
+        ctx.drawImage(imgCabeloTras, 0, 0, canvas.width, canvas.height);
+    };
 
     const imgPele = new Image();
     imgPele.src = PeleSelecionado;
-    ctx.drawImage(imgPele, 0, 0, canvas.width, canvas.height);
+    imgPele.onload = function() {
+        ctx.drawImage(imgPele, 0, 0, canvas.width, canvas.height);
+    };
 
     const imgRoupa = new Image();
     imgRoupa.src = RoupaSelecionada;
-    ctx.drawImage(imgRoupa, 0, 0, canvas.width, canvas.height);
+    imgRoupa.onload = function() {
+        ctx.drawImage(imgRoupa, 0, 0, canvas.width, canvas.height);
+    };
 
     const imgCabeloFrente = new Image();
     imgCabeloFrente.src = CabeloFrenteSelecionado;
-    ctx.drawImage(imgCabeloFrente, 0, 0, canvas.width, canvas.height);
+    imgCabeloFrente.onload = function() {
+        ctx.drawImage(imgCabeloFrente, 0, 0, canvas.width, canvas.height);
+    };
 
     const imgAcc = new Image();
     imgAcc.src = AccSelecionado;
@@ -36,8 +43,6 @@ function desenharCanvas() {
         ctx.drawImage(imgAcc, 0, 0, canvas.width, canvas.height);
     };
 }
-
-
 
 function BaixarCanvas() {
     const canvas = document.getElementById('canvas');
