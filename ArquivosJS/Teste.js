@@ -37,12 +37,15 @@ function desenharCanvas() {
         ctx.drawImage(imgCabeloFrente, 0, 0, canvas.width, canvas.height);
     };
 
-    const imgAcc = new Image();
-    imgAcc.src = AccSelecionado;
-    imgAcc.onload = function() {
-        ctx.drawImage(imgAcc, 0, 0, canvas.width, canvas.height);
-    };
+    if (AccSelecionado !== 'Imagens/blank.png') {
+        const imgAcc = new Image();
+        imgAcc.src = AccSelecionado;
+        imgAcc.onload = function() {
+            ctx.drawImage(imgAcc, 0, 0, canvas.width, canvas.height);
+        };
+    }
 }
+
 
 function BaixarCanvas() {
     const canvas = document.getElementById('canvas');
