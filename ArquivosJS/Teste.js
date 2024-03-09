@@ -32,8 +32,11 @@ function desenharCanvas() {
 
     const imgAcc = new Image();
     imgAcc.src = AccSelecionado;
-    ctx.drawImage(imgAcc, 0, 0, canvas.width, canvas.height);
+    imgAcc.onload = function() {
+        ctx.drawImage(imgAcc, 0, 0, canvas.width, canvas.height);
+    };
 }
+
 
 
 function BaixarCanvas() {
