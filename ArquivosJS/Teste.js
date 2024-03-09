@@ -1,8 +1,8 @@
-let CabeloTrasSelecionado = '';
-let PeleSelecionado = '';
-let RoupaSelecionada = '';
-let CabeloFrenteSelecionado = '';
-let AccSelecionado = '';
+let CabeloTrasSelecionado = 'Imagens/blank.png';
+let PeleSelecionado = 'Imagens/Peles/skin-05.png';
+let RoupaSelecionada = 'Imagens/blank.png';
+let CabeloFrenteSelecionado = 'Imagens/blank.png';
+let AccSelecionado = 'Imagens/blank.png';
 
 const canvas = document.getElementById('canvas');
 canvas.width = 1200;
@@ -13,7 +13,6 @@ function desenharCanvas() {
     const canvas = document.getElementById('canvas');
     const ctx = canvas.getContext('2d');
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-
 
     const imgCabeloTras = new Image();
     imgCabeloTras.src = CabeloTrasSelecionado;
