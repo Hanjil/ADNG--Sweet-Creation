@@ -30,8 +30,9 @@ body {
 #Aviso {
     color: rgb(222, 135, 199);
     font-size: larger;
-    margin-left: 1000px;
+    margin-left: 1050px;
     background-color: rgb(237, 217, 191, 0.5);
     text-align: center;
     border-radius: 10px;
+    width: 450px;
 }
