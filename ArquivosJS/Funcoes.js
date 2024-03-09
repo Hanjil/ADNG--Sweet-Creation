@@ -346,7 +346,7 @@ function selecionarPele(PeleSelecionado) {
     if(PeleSelecionado === 1) {
         novosBotoesPele.innerHTML = `
             <div class="MargemBotoes">
-            <button onclick="voltarOpcoesPele()">Voltar</button>
+                <button onclick="voltarOpcoesPele()">Voltar</button>
             </div>
             <div class="MargemBotoes">
                 <button onclick="ProximaPele('Imagens/Peles/skin-01.png')">Versão 1</button>
@@ -356,61 +356,61 @@ function selecionarPele(PeleSelecionado) {
     } else if (PeleSelecionado === 2) {
         novosBotoesPele.innerHTML = `
             <div class="MargemBotoes">
-            <button onclick="voltarOpcoesPele()">Voltar</button>
+                <button onclick="voltarOpcoesPele()">Voltar</button>
             </div>
             <div class="MargemBotoes">
-            <button onclick="ProximaPele('Imagens/Peles/skin-02.png')">Versão 1</button>
-            <button onclick="ProximaPele('Imagens/Peles/skin-09.png')">Versão 2</button>
+                <button onclick="ProximaPele('Imagens/Peles/skin-02.png')">Versão 1</button>
+                <button onclick="ProximaPele('Imagens/Peles/skin-09.png')">Versão 2</button>
             </div>
         `;
     } else if (PeleSelecionado === 3) {
         novosBotoesPele.innerHTML = `
             <div class="MargemBotoes">
-            <button onclick="voltarOpcoesPele()">Voltar</button>
+                <button onclick="voltarOpcoesPele()">Voltar</button>
             </div>
             <div class="MargemBotoes">
-            <button onclick="ProximaPele('Imagens/Peles/skin-03.png')">Versão 1</button>
-            <button onclick="ProximaPele('Imagens/Peles/skin-10.png')">Versão 2</button>
+                <button onclick="ProximaPele('Imagens/Peles/skin-03.png')">Versão 1</button>
+                <button onclick="ProximaPele('Imagens/Peles/skin-10.png')">Versão 2</button>
             </div>
         `;
     } else if (PeleSelecionado === 4) {
         novosBotoesPele.innerHTML = `
             <div class="MargemBotoes">
-            <button onclick="voltarOpcoesPele()">Voltar</button>
+                <button onclick="voltarOpcoesPele()">Voltar</button>
             </div>
             <div class="MargemBotoes">
-            <button onclick="ProximaPele('Imagens/Peles/skin-04.png')">Versão 1</button>
-            <button onclick="ProximaPele('Imagens/Peles/skin-11.png')">Versão 2</button>
+                <button onclick="ProximaPele('Imagens/Peles/skin-04.png')">Versão 1</button>
+                <button onclick="ProximaPele('Imagens/Peles/skin-11.png')">Versão 2</button>
             </div>
         `;
     } else if (PeleSelecionado === 5) {
         novosBotoesPele.innerHTML = `
             <div class="MargemBotoes">
-            <button onclick="voltarOpcoesPele()">Voltar</button>
+                <button onclick="voltarOpcoesPele()">Voltar</button>
             </div>
             <div class="MargemBotoes">
-            <button onclick="ProximaPele('Imagens/Peles/skin-05.png')">Versão 1 (Padrão)</button>
-            <button onclick="ProximaPele('Imagens/Peles/skin-12.png')">Versão 2</button>
+                <button onclick="ProximaPele('Imagens/Peles/skin-05.png')">Versão 1 (Padrão)</button>
+                <button onclick="ProximaPele('Imagens/Peles/skin-12.png')">Versão 2</button>
             </div>
         `;
     } else if (PeleSelecionado === 6) {
         novosBotoesPele.innerHTML = `
             <div class="MargemBotoes">
-            <button onclick="voltarOpcoesPele()">Voltar</button>
+                <button onclick="voltarOpcoesPele()">Voltar</button>
             </div>
             <div class="MargemBotoes">
-            <button onclick="ProximaPele('Imagens/Peles/skin-06.png')">Versão 1</button>
-            <button onclick="ProximaPele('Imagens/Peles/skin-13.png')">Versão 2</button>
+                <button onclick="ProximaPele('Imagens/Peles/skin-06.png')">Versão 1</button>
+                <button onclick="ProximaPele('Imagens/Peles/skin-13.png')">Versão 2</button>
             </div>
         `;
     } else if (PeleSelecionado === 7) {
         novosBotoesPele.innerHTML = `
             <div class="MargemBotoes">
-            <button onclick="voltarOpcoesPele()">Voltar</button>
+                <button onclick="voltarOpcoesPele()">Voltar</button>
             </div>
             <div class="MargemBotoes">
-            <button onclick="ProximaPele('Imagens/Peles/skin-07.png')">Versão 1</button>
-            <button onclick="ProximaPele('Imagens/Peles/skin-14.png')">Versão 2</button>
+                <button onclick="ProximaPele('Imagens/Peles/skin-07.png')">Versão 1</button>
+                <button onclick="ProximaPele('Imagens/Peles/skin-14.png')">Versão 2</button>
             </div>
         `;
     }
@@ -725,3 +725,7 @@ function voltarOpcoesCabeloFrente() {
     novosBotoesCabeloFrente.style.display = "none";
 }
 
+function toggleMensagem() {
+    var MensagemAviso = document.getElementById("MensagemDeAviso");
+    MensagemAviso.style.display = (MensagemAviso.style.display === "block") ? "none" : "block";
+}
