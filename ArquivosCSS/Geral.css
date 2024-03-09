@@ -12,6 +12,11 @@
     margin: 5px;
 }
 
+.Direita {
+    display: flex;
+    justify-content: flex-end;
+}
+
 body {
     background-color: burlywood;
 }
