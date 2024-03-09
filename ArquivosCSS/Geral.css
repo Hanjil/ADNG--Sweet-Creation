@@ -31,12 +31,12 @@ body {
     border-radius: 20px;
     background-color: rgba(210, 176, 243, 0.5);
     margin-left: 1050px;
+    text-align: center;
 }
 
 #MensagemDeAviso {
     color: rgb(222, 135, 199);
     font-size: larger;
-    background-color: rgba(237, 217, 191, 0.5);
     text-align: center;
     border-radius: 10px;
 }
