@@ -14,31 +14,26 @@ function desenharCanvas() {
     const ctx = canvas.getContext('2d');
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-    if (CabeloTrasSelecionado !== '') {
-        const imgCabeloTras = new Image();
-        imgCabeloTras.src = CabeloTrasSelecionado;
-        ctx.drawImage(imgCabeloTras, 0, 0, canvas.width, canvas.height);
-    }
-    if (PeleSelecionado !== '') {
-        const imgPele = new Image();
-        imgPele.src = PeleSelecionado;
-        ctx.drawImage(imgPele, 0, 0, canvas.width, canvas.height);
-    }
-    if (RoupaSelecionada !== '') {
-        const imgRoupa = new Image();
-        imgRoupa.src = RoupaSelecionada;
-        ctx.drawImage(imgRoupa, 0, 0, canvas.width, canvas.height);
-    }
-    if (CabeloFrenteSelecionado !== '') {
-        const imgCabeloFrente = new Image();
-        imgCabeloFrente.src = CabeloFrenteSelecionado;
-        ctx.drawImage(imgCabeloFrente, 0, 0, canvas.width, canvas.height);
-    }
-    if (AccSelecionado !== '') {
-        const imgAcc = new Image();
-        imgAcc.src = AccSelecionado;
-        ctx.drawImage(imgAcc, 0, 0, canvas.width, canvas.height);
-    }
+
+    const imgCabeloTras = new Image();
+    imgCabeloTras.src = CabeloTrasSelecionado;
+    ctx.drawImage(imgCabeloTras, 0, 0, canvas.width, canvas.height);
+
+    const imgPele = new Image();
+    imgPele.src = PeleSelecionado;
+    ctx.drawImage(imgPele, 0, 0, canvas.width, canvas.height);
+
+    const imgRoupa = new Image();
+    imgRoupa.src = RoupaSelecionada;
+    ctx.drawImage(imgRoupa, 0, 0, canvas.width, canvas.height);
+
+    const imgCabeloFrente = new Image();
+    imgCabeloFrente.src = CabeloFrenteSelecionado;
+    ctx.drawImage(imgCabeloFrente, 0, 0, canvas.width, canvas.height);
+
+    const imgAcc = new Image();
+    imgAcc.src = AccSelecionado;
+    ctx.drawImage(imgAcc, 0, 0, canvas.width, canvas.height);
 }
 
 function BaixarCanvas() {
