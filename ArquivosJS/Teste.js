@@ -35,6 +35,7 @@ function desenharCanvas() {
     ctx.drawImage(imgAcc, 0, 0, canvas.width, canvas.height);
 }
 
+
 function BaixarCanvas() {
     const canvas = document.getElementById('canvas');
     const dataURL = canvas.toDataURL("image/png");
