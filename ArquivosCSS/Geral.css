@@ -28,6 +28,11 @@ body {
 }
 
 #Aviso {
+    border-radius: 20px;
+    background-color: rgba(210, 176, 243, 0.5);
+}
+
+#MensagemDeAviso {
     color: rgb(222, 135, 199);
     font-size: larger;
     margin-left: 1050px;
