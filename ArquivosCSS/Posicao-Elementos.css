@@ -40,5 +40,6 @@
 }
 #Aviso {
     position: absolute;
+    bottom: 50%;
     z-index: 7;
 }
