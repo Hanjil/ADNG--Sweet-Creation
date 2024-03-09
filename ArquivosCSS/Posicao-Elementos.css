@@ -2,6 +2,13 @@
     position: absolute;
     top: -30%;
     left: 18%;
+    height: 80%;
+    width: auto;
+}
+
+#Categorias img {
+    height: 100%;
+    width: 100%;
 }
 
 #CabeloTras {
