@@ -27,6 +27,7 @@ body {
 }
 
 #Aviso {
+    bottom: 50%;
     color: rgb(222, 135, 199);
     font-size: larger;
     margin-left: 80px;
